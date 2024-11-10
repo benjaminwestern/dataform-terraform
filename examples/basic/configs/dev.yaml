@@ -1,0 +1,32 @@
+release:
+  code_compilation_config:
+    assertion_schema: example-assertion-dataset
+    database_suffix: ""
+    default_database: gcp-example-project
+    default_location: us-central1
+    default_schema: example-dataset
+    schema_suffix: ""
+    table_prefix: ""
+    vars:
+      var1: value
+  cron_schedule: 0 7 * * *
+  time_zone: America/New_York
+
+workflows:
+  name-of-workflow:
+    cron_schedule: 0 7 * * *
+    time_zone: America/New_York
+    invocation_config:
+      fully_refresh_incremental_tables_enabled: false
+      included_tags:
+        - tag_1
+      included_targets:
+        table_name_1:
+          database: gcp-example-project
+          schema: example-dataset
+        table_name_2:
+          database: gcp-example-project
+          schema: example-dataset
+      service_account: ""
+      transitive_dependencies_included: true
+      transitive_dependents_included: true
