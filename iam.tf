@@ -1,5 +1,5 @@
 module "project" {
-  source         = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/project?ref=v36.0.1"
+  source         = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/project?ref=v37.1.0"
   name           = var.project_id
   project_create = false
 
