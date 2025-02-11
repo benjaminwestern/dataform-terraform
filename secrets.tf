@@ -1,5 +1,5 @@
 module "dataform-ssh-key" {
-  source     = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/secret-manager?ref=v36.0.1"
+  source     = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/secret-manager?ref=v37.2.0"
   project_id = var.project_id
   secrets = {
     dataform-ssh-key = {
