@@ -18,7 +18,7 @@ module "project" {
 }
 
 module "dataform-sa" {
-  source       = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/iam-service-account?ref=v36.0.1"
+  source       = "github.com/GoogleCloudPlatform/cloud-foundation-fabric//modules/iam-service-account?ref=v38.1.0"
   project_id   = var.project_id
   name         = "dataform-runner"
   display_name = "Dataform Runner"
